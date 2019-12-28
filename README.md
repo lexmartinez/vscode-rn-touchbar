@@ -1,5 +1,6 @@
 # vscode-rn-touchbar
 
+:diamond_shape_with_a_dot_inside: A TouchBar VSCode Extension with common commands to react-native development
 
 ## Local Usage
 
