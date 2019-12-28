@@ -1,0 +1,95 @@
+{
+	"name": "react-native-touchbar",
+	"displayName": "react-native-touchbar",
+	"description": "A TouchBar common commands to react-native development",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"main": "./extension.js",
+	"activationEvents": [ "*" ],
+	"contributes": {
+		"commands": [{
+			"command": "rntouchbar.start",
+			"title": "1Start",
+			"icon": "./assets/start.png"
+		},
+		{
+			"command": "rntouchbar.ios",
+			"title": "2iOS",
+			"icon": "./assets/ios.png"
+		},
+		{
+			"command": "rntouchbar.android",
+			"title": "3Android",
+			"icon": "./assets/android.png"
+		},
+		{
+			"command": "rntouchbar.debugger",
+			"title": "4Debugger",
+			"icon": "./assets/debugger.png"
+		}],
+		"menus": {
+			"touchBar": [
+				{
+					"command": "rntouchbar.start",
+					"group": "editing"
+				},
+				{
+					"command": "rntouchbar.ios",
+					"group": "editing"
+				},
+				{
+					"command": "rntouchbar.android",
+					"group": "editing"
+				},
+				{
+					"command": "rntouchbar.debugger",
+					"group": "editing"
+				}
+			]
+		},
+		"configuration": {
+			"title": "React Native TouchBar",
+			"properties": {
+			  "rntouchbar.androidCommand": {
+				"type": "string",
+				"default": "yarn android",
+				"description": "Specifies command to executed with android button"
+			  },
+			  "rntouchbar.iosCommand": {
+				"type": "string",
+				"default": "yarn ios",
+				"description": "Specifies command to executed with iOS button"
+			  },
+			  "rntouchbar.startCommand": {
+				"type": "string",
+				"default": "yarn start",
+				"description": "Specifies command to executed with start button"
+			  },
+			  "rntouchbar.debuggerCommand": {
+				"type": "string",
+				"default": "open '/applications/React Native Debugger.app/'",
+				"description": "Specifies command to executed with RN debugger button"
+			  }
+			}
+		}
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.41.0",
+		"eslint": "^6.6.0",
+		"glob": "^7.1.5",
+		"mocha": "^6.2.2",
+		"typescript": "^3.6.4",
+		"vscode-test": "^1.2.2"
+	}
+}
