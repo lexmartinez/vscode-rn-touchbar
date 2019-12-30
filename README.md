@@ -2,7 +2,7 @@
 
 :diamond_shape_with_a_dot_inside: A TouchBar VSCode Extension with common commands to react-native development
 
-![](https://github.com/lexmartinez/vscode-rn-touchbar/raw/master/screenshots/screenshot.png)
+![](https://github.com/lexmartinez/vscode-rn-touchbar/raw/master/screenshot.png)
 
 ## Local Usage
 
